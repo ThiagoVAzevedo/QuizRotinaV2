@@ -14,12 +14,16 @@ const Cadastro = ({ navigation }) => {
     alert('');
   };
 
+const handleCadastro = () => {
+  navigation.navigate('Login');
+};
+
   return (
     <View style={[styles.container, { backgroundColor: 'lightblue' }]}>
       <Image
         style={styles.imagem}
         resizeMode="center"
-        source={require('./imagens/saude.png')}
+        source={require('./imagens/saudelogobg.jpg')}
       />
       <Text style={[styles.label1, { marginBottom: 20, textAlign: 'center' }]}>
         Cadastro de Usuário
@@ -48,6 +52,7 @@ const Cadastro = ({ navigation }) => {
           <TextInput
             style={[styles.input, { width: 400 }]}
             value={senha}
+            secureTextEntry
             onChangeText={setSenha}
           />
         </View>
@@ -56,6 +61,7 @@ const Cadastro = ({ navigation }) => {
           <TextInput
             style={[styles.input, { width: 400 }]}
             value={confirmasenha}
+            secureTextEntry
             onChangeText={setConfirmasenha}
           />
         </View>
@@ -63,7 +69,7 @@ const Cadastro = ({ navigation }) => {
 
       {/* FLEXIBILIDADE DA POSIÇÃO DO BOTÃO */}
       <View style={styles.ButtonContainer}>
-        <Button title="Cadastrar" onPress={handleGravar} />
+        <Button title="Cadastrar" onPress={handleCadastro} />
       </View>
     </View>
   );

@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "Login",
-    "slug": "Login",
+    "name": "QuizRotina",
+    "slug": "QuizRotina",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./imagens/saude.png",
+    "icon": "./imagens/saudelogobg.jpg",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./imagens/saude.png",
+      "image": "./imagens/saudelogobg.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -19,7 +19,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./imagens/saude.png",
+        "foregroundImage": "./imagens/saudelogobg.jpg",
         "backgroundColor": "#ffffff"
       }
     },

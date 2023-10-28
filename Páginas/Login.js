@@ -34,7 +34,7 @@ const Login = ({ navigation }) => {
       <Image
         style={styles.imagem}
         resizeMode="center"
-        source={require('./imagens/saude.png')}
+        source={require('./imagens/saudebg.jpg')}
       />
       <Text style={[styles.label1, { marginBottom: -50, textAlign: 'center' }]}>
         Questionário de Rotina e Bem-Estar
@@ -134,8 +134,8 @@ const styles = StyleSheet.create({
   },
   imagem: {
     alignSelf: 'stretch',
-    height: 70,
-    size: 50,
+    height: 100,
+    size: 90,
     marginTop: 5,
     marginBottom: 10,
   },
